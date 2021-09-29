@@ -20,6 +20,12 @@ export const defaultConfig: TxBuilderConfig = {
     },
   },
   lendingPool: {
+    ftm: {
+      proto: {
+        LENDING_POOL: '0x0490E81Df6F4E7AFC8c12578f1638a1C8ed7E650',
+        WETH_GATEWAY: '0xf8d912e94DeFC5090b0A1DAdda84E6B83e9B4dd7',
+      }
+    },
     mainnet: {
       proto: {
         LENDING_POOL: '0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9',

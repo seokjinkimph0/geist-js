@@ -30,6 +30,7 @@ export enum Network {
   fuji = 'fuji', // avalanche test network
   arbitrum_one = 'arbitrum_one',
   arbitrum_rinkeby = 'arbitrum_rinkeby',
+  ftm = 'ftm',
 }
 
 export enum ChainId {
@@ -45,6 +46,7 @@ export enum ChainId {
   fuji = 43113, // avalanche test network
   arbitrum_one = 42161,
   arbitrum_rinkeby = 421611,
+  ftm = 250,
 }
 export type ConstantAddressesByNetwork = {
   [network: string]: {
