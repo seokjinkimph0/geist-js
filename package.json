@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "license": "MIT",
-  "name": "@geist-ftm/geist-ftm-js",
+  "name": "geist-js",
   "description": "geist js",
   "keywords": [],
   "sideEffects": false,
