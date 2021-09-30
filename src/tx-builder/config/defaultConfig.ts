@@ -22,7 +22,7 @@ export const defaultConfig: TxBuilderConfig = {
   lendingPool: {
     ftm: {
       proto: {
-        LENDING_POOL: '0x0490E81Df6F4E7AFC8c12578f1638a1C8ed7E650',
+        LENDING_POOL: '0x22C971B6a3aD4D11C5F4DDE093d36F222daB632f',
         WETH_GATEWAY: '0xf8d912e94DeFC5090b0A1DAdda84E6B83e9B4dd7',
       }
     },

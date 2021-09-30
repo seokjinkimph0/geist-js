@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "name": "geist-js",
   "description": "geist js",
@@ -63,9 +63,7 @@
     "ethers": "^5.0.24"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
+    "hooks": {}
   },
   "prettier": {
     "printWidth": 80,
