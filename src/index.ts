@@ -40,7 +40,7 @@ export {
   IncentivesControllerInterface,
 } from './tx-builder/services/IncentivesController';
 
-export * from './tx-builder/services/ERC20';
+export { default as ERC20Service } from './tx-builder/services/ERC20';
 
 export * from './tx-builder/config';
 
