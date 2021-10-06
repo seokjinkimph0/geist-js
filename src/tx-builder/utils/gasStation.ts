@@ -1,7 +1,7 @@
 import { BigNumber } from 'ethers';
 import { transactionType, Configuration, Network } from '../types';
 
-const DEFAULT_SURPLUS = 30; // 30%
+const DEFAULT_SURPLUS = 60; // 30%
 // polygon gas estimation is very off for some reason
 const POLYGON_SURPLUS = 60; // 60%
 
