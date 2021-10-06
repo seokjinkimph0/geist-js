@@ -19,7 +19,6 @@ export const estimateGas = async (
 export const estimateGasByNetwork = async (
   tx: transactionType,
   config: Configuration,
-  gasSurplus?: number
 ): Promise<BigNumber> => {
   const estimatedGas = await config.provider.estimateGas(tx);
 
@@ -29,7 +28,7 @@ export const estimateGasByNetwork = async (
   }
 
   return estimatedGas.add(
-    estimatedGas.mul(gasSurplus || DEFAULT_SURPLUS).div(100)
+    estimatedGas.mul(DEFAULT_SURPLUS).div(100)
   );
 };
 

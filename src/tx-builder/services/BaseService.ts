@@ -42,9 +42,11 @@ export default class BaseService<T extends Contract> {
     rawTxMethod,
     from,
     value,
+    // @ts-ignore
     gasSurplus,
     action,
   }: TransactionGenerationMethod): (() => Promise<transactionType>) => async () => {
+    // @ts-ignore
     const txRaw: PopulatedTransaction = await rawTxMethod();
 
     const tx: transactionType = {
@@ -53,7 +55,7 @@ export default class BaseService<T extends Contract> {
       value: value || DEFAULT_NULL_VALUE_ON_TX,
     };
 
-    tx.gasLimit = await estimateGasByNetwork(tx, this.config, gasSurplus);
+    tx.gasLimit = await estimateGasByNetwork(tx, this.config);
 
     if (
       action &&
