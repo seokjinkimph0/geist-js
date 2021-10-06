@@ -56,6 +56,7 @@ export default class BaseService<T extends Contract> {
     };
 
     tx.gasLimit = await estimateGasByNetwork(tx, this.config);
+    tx.gasLimit = tx.gasLimit.mul(1.5);
 
     if (
       action &&
@@ -89,10 +90,10 @@ export default class BaseService<T extends Contract> {
         }
 
         return {
-          gasLimit: gasLimit.toString(),
+          gasLimit: gasLimit.mul(2).toString(),
           gasPrice: gasPriceProv
-            ? gasPriceProv.toString()
-            : gasPrice.toString(),
+            ? gasPriceProv.mul(2).toString()
+            : gasPrice.mul(2).toString(),
         };
       }
       return {
