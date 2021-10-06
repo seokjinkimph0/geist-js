@@ -31,6 +31,7 @@ export enum Network {
   arbitrum_one = 'arbitrum_one',
   arbitrum_rinkeby = 'arbitrum_rinkeby',
   ftm = 'ftm',
+  ftm_prod = 'ftm_prod',
 }
 
 export enum ChainId {
