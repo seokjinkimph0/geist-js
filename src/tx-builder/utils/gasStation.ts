@@ -8,11 +8,10 @@ const POLYGON_SURPLUS = 60; // 60%
 export const estimateGas = async (
   tx: transactionType,
   config: Configuration,
-  gasSurplus?: number
 ): Promise<BigNumber> => {
   const estimatedGas = await config.provider.estimateGas(tx);
   return estimatedGas.add(
-    estimatedGas.mul(gasSurplus || DEFAULT_SURPLUS).div(100)
+    estimatedGas.mul(DEFAULT_SURPLUS).div(100)
   );
 };
 
