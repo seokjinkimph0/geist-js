@@ -90,10 +90,10 @@ export default class BaseService<T extends Contract> {
         }
 
         return {
-          gasLimit: gasLimit.mul(2).toString(),
+          gasLimit: gasLimit.toString(),
           gasPrice: gasPriceProv
-            ? gasPriceProv.mul(2).toString()
-            : gasPrice.mul(2).toString(),
+            ? gasPriceProv.toString()
+            : gasPrice.toString(),
         };
       }
       return {
