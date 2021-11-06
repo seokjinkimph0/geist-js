@@ -32,6 +32,7 @@ export enum Network {
   arbitrum_rinkeby = 'arbitrum_rinkeby',
   ftm = 'ftm',
   ftm_prod = 'ftm_prod',
+  avax = 'avax',
 }
 
 export enum ChainId {
@@ -48,7 +49,9 @@ export enum ChainId {
   arbitrum_one = 42161,
   arbitrum_rinkeby = 421611,
   ftm = 250,
+  avax = 43114,
 }
+
 export type ConstantAddressesByNetwork = {
   [network: string]: {
     SYNTHETIX_PROXY_ADDRESS?: tEthereumAddress;
