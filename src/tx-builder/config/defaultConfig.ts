@@ -28,8 +28,8 @@ export const defaultConfig: TxBuilderConfig = {
     },
     avax: {
       proto: {
-        LENDING_POOL: '0xf75E4cF784c90987fDeD3dDe7Dc32893F5ADdA88',
-        WETH_GATEWAY: '0xfF39D91DC10dcF2b2127d3cc67980fe814E538a5',
+        LENDING_POOL: '0x70BbE4A294878a14CB3CDD9315f5EB490e346163',
+        WETH_GATEWAY: '0x56D0fEd06d2e0B5AC80d7a9ed0387694bDf90C33',
       }
     },
     mainnet: {
