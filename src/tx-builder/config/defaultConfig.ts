@@ -32,10 +32,16 @@ export const defaultConfig: TxBuilderConfig = {
         WETH_GATEWAY: '0x56D0fEd06d2e0B5AC80d7a9ed0387694bDf90C33',
       }
     },
-    test: {
+    bsc_test: {
       proto: {
-        LENDING_POOL: '0xAE380A8EE64f0d9911fbafF93c435cB19FC5FFC8',
-        WETH_GATEWAY: '0x1aE3b267fcE717AbDec8C19185F021477099eCfE',
+        LENDING_POOL: '0xf529Bb80082a8869C6F9DCe37DDb85EE6084F7FB',
+        WETH_GATEWAY: '0x4850d61C069935F35d716537406e40478f36Af08',
+      }
+    },
+    bsc: {
+      proto: {
+        LENDING_POOL: '',
+        WETH_GATEWAY: '',
       }
     },
     mainnet: {

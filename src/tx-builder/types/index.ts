@@ -33,7 +33,8 @@ export enum Network {
   ftm = 'ftm',
   ftm_prod = 'ftm_prod',
   avax = 'avax',
-  test = 'test',
+  bsc_test = 'bsc_test',
+  bsc = 'bsc'
 }
 
 export enum ChainId {
@@ -51,7 +52,8 @@ export enum ChainId {
   arbitrum_rinkeby = 421611,
   ftm = 250,
   avax = 43114,
-  test = 250
+  bsc_test = 97,
+  bsc = 56
 }
 
 export type ConstantAddressesByNetwork = {
