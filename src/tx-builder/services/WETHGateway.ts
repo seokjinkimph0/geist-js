@@ -251,7 +251,7 @@ export default class WETHGatewayService
           numericRateMode,
           onBehalfOf || user
         ),
-      gasSurplus: 30,
+      gasSurplus: 100,
       from: user,
       value: convertedAmount,
     });

@@ -8,6 +8,7 @@ import {
   ProtocolAction,
   EthereumTransactionTypeExtended,
   eEthereumTxType,
+  Network,
 } from '../types';
 import { ContractsFactory } from '../interfaces/ContractsFactory';
 import { estimateGasByNetwork, getGasPrice } from '../utils/gasStation';
@@ -55,8 +56,15 @@ export default class BaseService<T extends Contract> {
       value: value || DEFAULT_NULL_VALUE_ON_TX,
     };
 
+
     tx.gasLimit = await estimateGasByNetwork(tx, this.config);
-    tx.gasLimit = tx.gasLimit.add(tx.gasLimit.mul(50).div(100))
+
+    const { network } = this.config;
+    if (network === Network.bsc) {
+      tx.gasLimit = tx.gasLimit.add(tx.gasLimit.mul(100).div(100))
+    } else {
+      tx.gasLimit = tx.gasLimit.add(tx.gasLimit.mul(50).div(100))
+    }
 
     if (
       action &&
