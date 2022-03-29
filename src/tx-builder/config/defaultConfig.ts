@@ -34,8 +34,8 @@ export const defaultConfig: TxBuilderConfig = {
     },
     bsc_test: {
       proto: {
-        LENDING_POOL: '0xf529Bb80082a8869C6F9DCe37DDb85EE6084F7FB',
-        WETH_GATEWAY: '0x4850d61C069935F35d716537406e40478f36Af08',
+        LENDING_POOL: '0xE29A55A6AEFf5C8B1beedE5bCF2F0Cb3AF8F91f5',
+        WETH_GATEWAY: '0x3025D9f822D399FD7fB6275b5164bbdE6DC28A29',
       }
     },
     bsc: {
