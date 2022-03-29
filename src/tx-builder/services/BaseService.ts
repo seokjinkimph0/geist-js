@@ -60,7 +60,7 @@ export default class BaseService<T extends Contract> {
     tx.gasLimit = await estimateGasByNetwork(tx, this.config);
 
     const { network } = this.config;
-    if (network === Network.bsc) {
+    if (network === Network.polygon || network === Network.bsc) {
       tx.gasLimit = tx.gasLimit.add(tx.gasLimit.mul(100).div(100))
     } else {
       tx.gasLimit = tx.gasLimit.add(tx.gasLimit.mul(50).div(100))
